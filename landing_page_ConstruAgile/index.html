@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, carousel, progress, modal">
+    <meta name="author" content="Michele Duarte">
+    <title>ConstruAgile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid" id="nav-container">
+        <a class="navbar-brand" href="#">
+          <img id="logo" src="./faviconio-logo/logo.svg" alt="construagile icon" class="d-inline-block align-text-top">
+          ConstruAgile
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlink" aria-controls="navlink" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navlink">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#nav-container">Home</a>
+            <a class="nav-link" href="#progress">Projetos</a>
+            <a class="nav-link" href="#customer-container">Clientes</a>
+            <a class="nav-link" href="#team-container">Equipes</a>
+          </div>
+        </div>
+      </div>    
+    </nav> 
+  </header>
+    
+  <main>
+    <div class="container-fluid" id="carouselSlide">
+      <div id="carouselMain" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="./images/pexels-expect-best-323780.jpg" class="d-block w-100 c-img" alt="house modern">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Projetos Personalizados</h5>
+                <p>Imóveis planejados para atender o seu estilo</p>
+              </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/pexels-mark-mccammon-2724749.jpg" class="d-block w-100 c-img" alt="dining room">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Reforma de imóveis</h5>
+                <p>Mude um ambiente ou vários, de forma rápida e simples</p>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/pexels-cowomen-2041393.jpg" class="d-block w-100 c-img" alt="two female employees in the office">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sem tempo para planejar cada detalhe?</h5>
+              <p>Profissionais capacitados para te auxiliar em cada fase.</p>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/pexels-binyamin-mellish-106399.jpg" class="d-block w-100 c-img" alt="wood house">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Conforto, Praticidade, Sustentabilidade, Eficiência, Preço Justo</h5>
+              <p>Economia de tempo, materiais e dinheiro</p>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/pexels-pixabay-159839.jpg" class="d-block w-100 c-img" alt="commercial room">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Seu imóvel, sua marca</h5>
+              <p>Projetos de ambientes comerciais.</p>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/pexels-anna-shvets-3727464.jpg" class="d-block w-100 c-img" alt="a woman in home-office">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Home-Office</h5>
+                <p>Seu espaço projetado às suas necessidades.</p>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/pexels-pixabay-259580.jpg" class="d-block w-100 c-img" alt="a modern living">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Moderno, Rústico, Clássico, Contemporâneo, Minimalista...</h5>
+              <p>Permita-se mudar, inovar dar uma renovada no visual do seu ambiente...</p>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/pexels-kampus-production-8463159.jpg" class="d-block w-100 c-img" alt="office team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Para saber mais sobre nossos serviços...</h5>
+              <p>Conheça nossos projetos, clientes e parceiros</p>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="progress">
+      <div class="circle-wrap" id="wrap-customer">
+        <div class="circle">
+          <div class="mask full-1">
+            <div class="fill-1"></div>
+          </div>
+          <div class="mask half">
+            <div class="fill-1"></div>
+          </div>
+          <div class="inside-circle">
+            <p id="text-amount">1.457</p> 
+            <p id="text-begin">Clientes</p>
+            <p id="text-end">Satisfeitos</p>
+          </div>
+        </div>
+          <button id="btn-customer" type="button" data-bs-toggle="modal" data-bs-target="#modalCustomer">Saiba mais</button>       
+      </div>   
+        
+      <div class="circle-wrap" id="wrap-projects-full">
+        <div class="circle">
+          <div class="mask full-2">
+            <div class="fill-2"></div>
+          </div>
+          <div class="mask half">
+            <div class="fill-2"></div>
+          </div>
+          <div class="inside-circle">
+            <p id="text-amount">358</p> 
+            <p id="text-begin">Projetos</p>
+            <p id="text-end">Concluídos</p>
+          </div>
+        </div> 
+          <button id="btn-proj-full" type="button" data-bs-toggle="modal" data-bs-target="#modalCustomer"> Saiba mais</button>     
+      </div>   
+      
+      <div class="circle-wrap" id="wrap-project-progress">
+        <div class="circle">
+          <div class="mask full-3">
+            <div class="fill-3"></div>
+          </div>
+          <div class="mask half">
+            <div class="fill-3"></div>
+          </div>
+          <div class="inside-circle">
+            <p id="text-amount">18</p> 
+            <p id="text-begin">Projetos em</p>
+            <p id="text-end">Andamento</p>
+          </div>
+        </div>     
+          <button id="btn-proj-progress" type="button" data-bs-toggle="modal" data-bs-target="#modalCustomer">Saiba mais</button>     
+      </div>   
+    </div>
+           
+    <div class="container-fluid" id="customer-container">
+      <h3 class="title-container">Nossos Clientes</h3>
+        <div class="card">
+          <img src="./images/pexels-marianne-238385.jpg" class="card-img-top" alt="Marianne's family">
+            <div class="card-body">
+              <p class="card-text"><h6>Ana Marques & Família</h6> &#34;Por termos uma família grande e muitos
+                amigos, pensamos em como poderíamos ter áreas sociais sem perdermos a privacidade.
+                Com a ajuda dos profissionais, conseguimos concretizar as ideias e ajustá-las de acordo
+                com nosso espaço e orçamento. Ficou perfeito e estamos aproveitando ao máximo... &#34;</p>
+            </div>
+        </div>
+        <div class="card">
+          <img src="./images/pexels-pixabay-34761.jpg" class="card-img-top" alt="Mrs. Eva and her husband Mr. Otávio">
+            <div class="card-body">
+              <p class="card-text"><h6>Eva & Otávio</h6> &#34;Estamos em uma fase da vida de viajar e conhecer novos lugares. Nossa antiga casa era grande, porém, nada confortável. Agora estamos 
+                em um lugar menor, ganhamos com ambientes planejados personalizados, visando nossa segurança e praticidade. 
+                ncrível a sensação de leveza, bem-estar e qualidade de vida... &#34;</p>
+            </div>
+        </div>
+        <div class="card">
+          <img src="./images/pexels-pixabay-235554.jpg"  class="card-img-top" alt="Júlia and her soon David">
+            <div class="card-body">
+              <p class="card-text"><h6>Júlia & Davi</h6> &#34;Meu estilo pede por praticidade e modernismo. Tempo é precioso, portanto, precisava de 
+                ambientes onde eu e meu filho pudéssemos estudar, trabalhar, divertir, descansar e receber nossos amigos e familiares. Fiquei impressionada com a 
+                expertise dos profissionais da equipe em nos atender e superar nossas expectativas... &#34;</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="team-container">
+      <h3 class="title-container">Nossa Equipe</h3>  
+        <div class="card-team">
+          <img src="./images/pexels-andrea-piacquadio-920377.jpg" class="card-img-top" alt="a woman in atelier">
+            <div class="card-body">
+              <h5 class="card-title">Time de Especialistas</h5>
+                <p class="card-text">Formados em diversas áreas, como, Arquitetos, Design de interiores, Engenheiros, Paisagistas, oferecendo o que há de mais inovador para seu projeto. Nem sempre é fácil colocar 
+                  em pŕatica as ideias que estão na cabeça, por isso, nosso time torna seguro, legal e prático concretizar seus objetivos.
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalCont">Agende sua visita</button>  
+            </div>
+        </div>    
+        <div class="card-team">
+          <img src="./images/pexels-andrea-piacquadio-927022.jpg" class="card-img-top" alt="a man in office">
+            <div class="card-body">
+              <h5 class="card-title">Eficiência no Atendimento</h5>
+                <p class="card-text">Nossa equipe conta com profissionais que oferecem todo o suporte, em cada etapa do seu projeto, 
+                  pronta para dirimir suas dúvidas e necessidades, sem supresas desagradáveis. Orçamentos precisos, contratos objetivos, garantias de materiais e serviços, suporte no pós-venda, tudo feito de forma transparente.</p>
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalCont">Conheça nosso time</button> 
+            </div>
+        </div>
+        <div class="card-team">
+          <img src="./images/pexels-antoni-shkraba-8191964.jpg" class="card-img-top" alt="a woman in office">
+            <div class="card-body">
+              <h5 class="card-title">Inovação, Qualidade</h5>
+                <p class="card-text">Fidelização é a nossa capacidade de atender nosso cliente a partir do primeiro contato. Venha tomar um café conosco e usufruir das vantagens e benefícios que nossa equipe pode lhe proporcionar. Se estiver sem tempo, clique no botão abaixo e um profissional irá te atender para maiores esclarecimentos.</p>
+                  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalCont">Entre em contato</button>
+            </div>
+        </div>
+    </div>  
+
+  </main>
+
+  <footer>
+    <div class="container-fluid-lg-expand" id="footer-container">
+      <div class="row" id="main-footer">
+        <div class="col-4" id="container-endereços">
+          <button type="button" class="btn" id="endereços-title"><i class="bi bi-building-fill-gear"></i> Onde Estamos</button>
+            <h5 class="city-title">São Paulo-SP</h5>
+            <p class="text-address">Rua ABC, 111, Bairro NXJ, Cep: 11111-1111</p>
+            <h5 class="city-title">Porto-Alegre-RS</h5>
+            <p class="text-address">Avenida DJR, 222, Bairro ZZZ, Cep: 22222-222</p>
+            <h5 class="city-title">Salvador-BA</h5>
+            <p class="text-address">Alameda OKG, 333, sala 33, Bairro TRR, Cep: 33333-333</p>
+        </div>
+        <div class="col-4" id="container-canais">
+          <button type="button" class="btn" id="canais-title"><i class="bi bi-phone-vibrate"></i> Nossos Canais</button>
+            <h5>Telefones:</h5>
+              <a href="#" class="btn stretched-link">0800-12312345</a>
+            <h5>E-mails:</h5>
+              <a href="#" class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#modalAtend">Atendimento</a>
+              <a href="#" class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#modalAtend">Vendas</a>
+              <a href="#" class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#modalAtend">Fornecedores</a>
+            <h5>Chat 24 Horas:</h5>
+              <a href="#" class="btn stretched-link">Falar Agora</a>
+        </div> 
+        <div class="col-4" id="container-social">
+          <button type="button" class="btn" id="social-title"><i class="bi bi-chat-left-heart"></i> Redes Sociais</button>
+            <a id="btn-instagram" href="https://www.instagram.com" target="_blank" class="btn stretched-link"><i class="bi bi-instagram"></i></a>
+            <a id="btn-facebook" href="https://www.facebook.com" target="_blank" class="btn stretched-link"><i class="bi bi-facebook"></i></a>
+            <a id="btn-linkedin" href="https://br.linkedin.com" target="_blank" class="btn stretched-link"><i class="bi bi-linkedin"></i></a>
+            <a id="btn-youtube" href="https://www.youtube.com" target="_blank" class="btn stretched-link"><i class="bi bi-youtube"></i></a>
+            <h6>Sobre Uso de Dados</h6>
+            <a id="btn-privacy" href="#" target="_blank" class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#modalPrivacy"><i class="bi bi-file-earmark-lock2"></i> Política de Privacidade</a>
+            <a id="btn-conditions" href="#" target="_blank" class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#modalConditions"><i class="bi bi-stickies-fill"></i> Termos e Condições</a>
+            <a id="btn-cookies" href="#" target="_blank" class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#modalCookies"><i class="bi bi-cloud-check-fill"></i> Cookies</a>
+        </div> 
+      </div> 
+    </div>     
+  </footer> 
+
+    <div class="modal fade" id="modalCustomer" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ConstruAgile - <em>Exclusivo para Novos Clientes<em></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nameModal" aria-describedby="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" placeholder="youremail@youremail.com" class="form-control" id="emailModal" aria-describedby="email">
+              </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalAtend" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ConstruAgile - <em>Exclusivo para Novos Clientes<em></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nameModal" aria-describedby="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" placeholder="youremail@youremail.com" class="form-control" id="emailModal" aria-describedby="email">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="phone" placeholder="00-1234-56789" class="form-control" id="phonelModal">
+              </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalCont" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ConstruAgile - <em>Exclusivo para Novos Clientes</em></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nameModal" aria-describedby="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailModal" aria-describedby="email">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="phone" class="form-control" placeholder="00-1234-56789" id="phonelModal" aria-describedby="phoneFull">
+              </div>
+              <form class="mb-3">
+                <label class="form-label" for="title-scheduling">Melhor Horário para Agendamento</label>
+                  <div class="form-check">
+                    <input type="checkbox" id="morningTime" name="morningTime" class="form-check-input" value="morning"
+                      aria-describedby="contactTime">
+                    <label class="form-check-label" for="morningTime">Manhã</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" id="afternoonTime" name="afternoonTime" class="form-check-input" value="afternoon"
+                      aria-describedby="contactTime">
+                    <label class="form-check-label" for="afternoonTime">Tarde</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" id="eveningTime" name="eveningTime" class="form-check-input" value="evening"
+                      aria-describedby="contactTime">
+                    <label class="form-check-label" for="eveningTime">Noite</label>
+                  </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+            </form>      
+          </div>  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>  
+      </div>
+    </div>
+  </div> 
+  
+  <div class="modal fade" id="modalPrivacy" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title data">ConstruAgile -  <em>Exclusivo para Novos Clientes<em></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-data">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos pariatur 
+              illo voluptatum reprehenderit et repellat accusamus est, modi nobis. Quaerat 
+              quos iure atque similique fugiat provident modi, voluptatum molestiae hic 
+              inventore nemo nobis ipsa, sunt necessitatibus unde vitae cum nostrum! Commodi 
+              perferendis quas, quis, esse consectetur exercitationem odio, ea at et molestiae 
+              sapiente aut impedit eveniet repudiandae aspernatur corrupti maiores! Omnis 
+              laboriosam tempora neque, eum ipsa doloremque rerum ad.</p>
+            <p class="text-data">Culpa, totam consequatur nobis veritatis vel ducimus, commodi 
+              cumque facere dolorum facilis iste, tempora temporibus labore voluptatem voluptate 
+              nemo dolorem necessitatibus nihil magnam itaque voluptatibus. Incidunt excepturi 
+              provident eius, ad itaque labore? Quos officiis suscipit rerum, obcaecati, 
+              necessitatibus magnam error doloribus consequuntur incidunt vero dolore voluptatem 
+              temporibus, atque ullam consequatur.</p> 
+            <p class="text-data">Quidem odit. Aliquid obcaecati ipsam nobis, necessitatibus tenetur 
+              empora libero quae totam rerum ullam illo doloribus officiis minima iusto 
+              praesentium veniam aspernatur in repellendus natus? Aliquid architecto veritatis vel. 
+              Nihil doloremque cum nulla distinctio repellendus ipsa nostrum blanditiis praesentium 
+              sed dolor quibusdam laudantium alias quod ducimus aut deleniti vel, consequuntur et 
+              expedita animi? Impedit quasi dolor libero aut dolore quis, illo odio facilis suscipit
+              praesentium perspiciatis.</p> 
+            <p class="text-data">Repudiandae mollitia magnam! Facere non necessitatibus dicta nulla 
+              iste blanditiis iciis illum laborum in, voluptatibus reiciendis quaerat perspiciatis 
+              saepe velit amet magnam eligendi numquam incidunt labore fugit quae voluptas possimus! 
+              Possimus ea inventore recusandae commodi debitis incidunt ratione et exercitationem 
+              nisi, facilis.</p> 
+            <p class="text-data">Perspiciatis ullam, impedit eaque quidem officiis ipsa consequuntur 
+              a, voluptatum eiciendis. Facilis rerum neque, nostrum ipsa aut quia expedita, itaque 
+              corrupti explicabo quod aperiam sequi ullam qui numquam quasi blanditiis facere dolores 
+              illum tempora non voluptatibus cupiditate! Iusto sunt, maiores nihil quo molestias.</p>
+            <p class="text-data">Repudiandaee nimi ad, laborum eius voluptatem assumenda, ipsum quaerat 
+              nostrum nisi? Omnis, placeat accusamus, ad eos praesentium, provident illo at aliquid 
+              dolor dicta odit corrupti. Debitis labore cum eveniet itaque amet magnam maiores 
+              laudantium quaerat consequatur erferendis possimus dicta optio, tempore id exercitationem
+              epellat magni vero voluptatibus! Assumenda quasi iusto dolores maiores eius modi id, 
+              voluptatibus quaerat.</p> 
+            <p class="text-data">Nnesciunt maxime explicabo enim libero dolorem nihil sed, quas atque 
+              similique commodi el ipsa voluptates voluptate deserunt soluta molestiae. Neque, 
+              repellendus natus blanditiis obcaecati deleniti nihil consectetur quas iusto et ratione 
+              unde totam.</p> 
+            <p class="text-data">Eaque praesentium atque aperiam? Labore dolore voluptatum unde aut 
+              nostrum distinctio debitis cumque error amet impedit nisi eligendi eveniet deserunt 
+              provident tenetur autem, hic doloremque, fugiat magni assumenda pariatur animi. Quaerat 
+              aperiam quasi, vero harum el repellendus! Architecto molestias tempora aspernatur libero 
+              maxime est, dicta a tempore earum dolores velit porro debitis, fugit magnam saepe 
+              eprehenderit illum incidunt amet.</p> 
+            <p class="text-data">Inventore. Soluta accusamus ut voluptates exercitationem eveniet 
+              quidem vel, voluptate deserunt odit quasi nemo iste autem neque quis quaerat modi? 
+              Accusamus ab in tempora reiciendis iusto et id assumenda cum tenetur soluta vel, porro 
+              labore quisquam voluptates.</p> 
+            <p class="text-data">Officia iure laborum exercitationem, perspiciatis numquam provident 
+              suscipit. Iste natus beatae porro illo blanditiis harum totam perferendis explicabo ipsam, 
+              consectetur esse atque qui quis necessitatibus quae mollitia iusto omnis quaerat enim 
+              voluptates suscipit dolor autem provident. Voluptatem, magni non voluptas deleniti nemo quam 
+              itaque.</p>
+            <div class="form-check">
+                <input type="checkbox" id="accept" name="accept" class="form-check-input" value="useraccept"
+                aria-describedby="acceptuser">
+                <label class="form-check-label" for="accept"><b>Li e estou de acordo com os termos expostos.</b></label>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
+</body>
+</html>
